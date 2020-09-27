@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>商品详情页</title>
+    <link rel="stylesheet" href="./css/font-awesome.min.css">
+    <link rel="stylesheet" href="./css/commodity details.css">
+</head>
+
+<body>
+    <div class="topbar">
+        <div><i class="fa fa-home"></i><a href="./index.html"> 京东首页 </a><i class="fa fa-map-marker"></i>浙江</div>
+        <div class="topbar-nav"><a href="">你好请登录</a>
+            <a href="./register.html">免费注册</a>
+            <a href="">我的订单</a>
+            <a href="./shopping_cart.html"><i class="fa fa-shopping-cart"></i>我的购物车</a>
+            <a href="">客户服务</a>
+        </div>
+    </div>
+    <div id="search_hurdle">
+        <div><img src="./images/logo.png" alt=""></div>
+        <div><input type="search" name="" id=""><input type="button" value="搜索"></div>
+    </div>
+    <!-- 中间商品详情 -->
+    <div class="content">
+        <div class="content-left">
+            <img src="" alt="" id="content_left">
+        </div>
+        <div class="content-right">
+            <h3 id="item_name"></h3>
+            <div class="price-favorable">
+                <p>京东价&nbsp;&nbsp;¥<span id="discount-price"></span>[9.5折][定价&nbsp;<span
+                        id="original-price">¥38.00</span>]<a>(降价通知)</a></p>
+                <p>促销信息&nbsp;&nbsp;<span>满减</span> 每满100元，可减50元现金 &nbsp;&nbsp;<a href="">详情》</a></p>
+                <p><span>加购价</span>&nbsp;&nbsp;满10元另加26.90元，或满12元另加16.90元，或满15元另加9.90元，即可在购物车换购热销商品&nbsp;&nbsp;<a
+                        href="">详情》</a>
+                </p>
+                <p><i class="fa fa-bell-o"></i>以上促销可在购物车任选其一</p>
+            </div>
+            <ul>
+                <li><span>增值业务</span></li>
+                <li><span><i class="fa fa-history"></i>高价回收，极速到账<i class="fa fa-gift"></i>礼品包装</span></li>
+                <li><span>排名</span></li>
+                <li><span>自营<a href="">童书销量榜</a>第8位</span></li>
+                <li>配送至</li>
+                <li><select name="" id="">
+                        <option value="">杭州市西湖区</option>
+                    </select>有货</li>
+                <li></li>
+                <li>由<span>京东</span>发货，并提供售后服务，23：00前下单，预计明天（09月10日送达）</li>
+                <li>重量</li>
+                <li>0.1kg</li>
+                <li>服务支持</li>
+                <li>放心购&nbsp;闪电退款&nbsp;上门换新&nbsp;破损包退换</li>
+                <li></li>
+                <li>211限时达 自提 49元免基础运费</li>
+                <li>
+                    <div><span>1</span><input type="button" value="+"><input type="button" value="-"></div>
+                </li>
+                <li><span onclick="add_cart()">加入购物车</span></li>
+                <li><span>温馨提示</span></li>
+                <li><span>1.支持7天无理由退货</span></li>
+            </ul>
+        </div>
+    </div>
+    <!-- 底部 -->
+    <ul class="footer">
+        <li>
+            <div></div><span>品类齐全，轻松购物</span>
+        </li>
+        <li>
+            <div></div><span>多仓直发，急速配送</span>
+        </li>
+        <li>
+            <div></div><span>正品行货，精致服务</span>
+        </li>
+        <li>
+            <div></div><span>天天低价，畅选无忧</span>
+        </li>
+    </ul>
+    <script src="./js/commodity_details.js"></script>
+</body>
+
+</html>

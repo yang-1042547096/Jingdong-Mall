@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>购物车</title>
+    <link rel="stylesheet" href="./css/font-awesome.min.css">
+    <link rel="stylesheet" href="./css/shopping_cart.css">
+</head>
+
+<body>
+    <div class="topbar">
+        <div><i class="fa fa-home"></i><a href="./index.html"> 京东首页 </a><i class="fa fa-map-marker"></i>浙江</div>
+        <div class="topbar-nav"><a href="./login.html">你好请登录</a>
+            <a href="./register.html">免费注册</a>
+            <a href="">我的订单</a>
+            <a href=""><i class="fa fa-shopping-cart"></i>我的购物车</a>
+            <a href="">客户服务</a>
+        </div>
+    </div>
+    <div id="search_hurdle">
+        <div><img src="./images/logo.png" alt=""></div>
+        <div><input type="search" name="" id=""><input type="button" value="搜索"></div>
+    </div>
+    <!-- 中间商品详情 -->
+    <div class="content">
+        <p>全部商品<span id="all_product"></span></p>
+        <table id="car">
+            <tr>
+                <td>
+                    <input type="checkbox" id="a" onclick="selectAllFood(this)">
+                    全选
+                </td>
+                <td>商品</td>
+                <td>单价</td>
+                <td>数量</td>
+                <td>小计</td>
+                <td>操作</td>
+            </tr>
+            <tr>
+                <td colspan="6" style="text-align: left; padding-left: 60px;">京东自营</td>
+            </tr>
+
+        </table>
+        <div class="nav_foot">
+            <div><input value="删除选中项" type="button" onclick="deleteSelectedFood()"></div>
+            <div>已选择<span id="totalClass">0</span>件商品&nbsp;&nbsp;&nbsp;&nbsp;总价¥<span id="p">0</span>
+                <input value="去结算" type="button" onclick="pay()"></div>
+
+        </div>
+
+    </div>
+    <!-- 底部 -->
+    <ul class="footer">
+        <li>
+            <div></div><span>品类齐全，轻松购物</span>
+        </li>
+        <li>
+            <div></div><span>多仓直发，急速配送</span>
+        </li>
+        <li>
+            <div></div><span>正品行货，精致服务</span>
+        </li>
+        <li>
+            <div></div><span>天天低价，畅选无忧</span>
+        </li>
+    </ul>
+    <script src="./js/shopping_cart.js"></script>
+</body>
+
+</html>
